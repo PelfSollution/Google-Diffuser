@@ -1,0 +1,38 @@
+/* Estilos del header fijo */
+header {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Estilos del footer fijo */
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    line-height:30px;
+    
+  }
+  
+  /* Estilos del contenedor principal */
+  .container {
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  
+  /* Estilos de las columnas */
+  .column {
+    flex-basis: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
