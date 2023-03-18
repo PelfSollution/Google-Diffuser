@@ -16,3 +16,16 @@ Para hacer esta práctica tienes que:
 - Hacer un fork de este repositorio.
 - Trabajar en tu *fork* haciendo commits regularmente (una práctica que aparece entera en un solo commit tendrá una nota muy baja o cero, hay que enseñar el proceso intermedio).
 - Al finalizar, descarga un ZIP y entrega en el Campus Online de UPC School (habrá una tarea para ello).
+
+//////////////////////////////////////////////////
+
+Queria hacer un CV Online, pero al final se me ha ocurrido algo un poco más divertido
+## Práctica  (David AR)
+
+- **Idea**: Crear un clon de la página inicial de Google experimentando con Flexbox, Grid y diseño responsivo. Luego, realizar una animación al estilo de los doodles de Google para experimentar con SVG y animación CSS. Finalmente, como ya hemos trabajado con JavaScript, intentar hacer una llamada a alguna API al hacer clic en el buscador y generar un evento que devuelva información e imágenes.
+
+**Listas de tareas**
+
+- [ ] Clon de la página (Flexbox, Grid, diseño responsivo)
+- [ ] Doodle animación (SVG, CSS)
+- [ ] API, eventos
