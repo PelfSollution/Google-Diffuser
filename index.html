@@ -1,42 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Base</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM11 16H13V18H11V16ZM11 7H13V15H11V7Z" fill="white"/>
-    </svg>
-    <h1>Página Base</h1>
-</header>
-    
-      <!-- Contenedor principal con dos columnas flexibles -->
-      <main class="container">
-        <div class="column">
-          <h2>Columna 1</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nihil dolorum voluptates voluptatem, unde earum, quos qui molestiae repudiandae consequatur veritatis culpa sapiente esse maiores quaerat expedita commodi. Sit, sunt!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nihil dolorum voluptates voluptatem, unde earum, quos qui molestiae repudiandae consequatur veritatis culpa sapiente esse maiores quaerat expedita commodi. Sit, sunt!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nihil dolorum voluptates voluptatem, unde earum, quos qui molestiae repudiandae consequatur veritatis culpa sapiente esse maiores quaerat expedita commodi. Sit, sunt!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nihil dolorum voluptates voluptatem, unde earum, quos qui molestiae repudiandae consequatur veritatis culpa sapiente esse maiores quaerat expedita commodi. Sit, sunt!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nihil dolorum voluptates voluptatem, unde earum, quos qui molestiae repudiandae consequatur veritatis culpa sapiente esse maiores quaerat expedita commodi. Sit, sunt!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nihil dolorum voluptates voluptatem, unde earum, quos qui molestiae repudiandae consequatur veritatis culpa sapiente esse maiores quaerat expedita commodi. Sit, sunt!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nihil dolorum voluptates voluptatem, unde earum, quos qui molestiae repudiandae consequatur veritatis culpa sapiente esse maiores quaerat expedita commodi. Sit, sunt!</p>
-        </div>
-        <div class="column">
-          <h2>Columna 2</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam assumenda similique, vel perferendis id placeat modi dicta suscipit iusto exercitationem est, tempore hic eaque ipsum distinctio praesentium blanditiis cupiditate ab!.</p>
-        </div>
-      </main>
-    
-      <!-- Footer fijo en la parte inferior -->
-      <footer>
-        <p>Todos los derechos reservados &copy; 2023</p>
-      </footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <link rel="stylesheet" href="img/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/d73a8f60e7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="menu-content">
+        <ul class="left-menu">
 
+          <li><a class="menu-ico" href="#">Sobre Google</a></li>
+          <li><a class="menu-ico" href="#">Tienda</a></li>
 
-</body>
+        </ul>
+        <ul class="right-menu">
+          <li><a class="link" href="#">Gmail</a></li>
+          <li><a class="link" href="#">Imágenes</a></li>
+          <li><a class="menu-ico" href="#"><i class="fa-solid fa-bars"></i></a></li>
+          <li><a class="user-icon" href="#"><i class="fa-solid fa-user"></i></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="content-section">
+      <div class="content-wrapper">
+        <img class="doodle"  src="img/doodle-fake.png" alt="Doodle Google" title="Doodle Google"/>
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input class="search-input" type="text" placeholder="Google" />
+          <i class="fa-solid fa-camera"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="search-btns">
+          <button class="search-btn">Buscar con Google</button>
+          <button class="lucky-btn">Voy a tener suerte</button>
+        </div>
+        <div class="language">
+          <p>Ofrecido por Google en:</p>
+          <li><a href="#">català</li>
+          <li><a href="#">galego</a></li>
+          <li><a href="#">euskara</a></li>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content upper-footer">
+        <p>España</p>
+      </div>
+      <div class="footer-content lower-footer">
+        <ul class="left-footer">
+          <li><a href="#">Sobre Google</a></li>
+          <li><a href="#">Publicidad</a></li>
+          <li><a href="#">Empresa</a></li>
+          <li><a href="#">Cómo funciona la Búsqueda</a></li>
+        </ul>
+       <p>Emisión neutra de carbono desde el 2007</p>
+        <ul class="right-footer">
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Términos</a></li>
+          <li><a href="#">Configuración</a></li>
+        </ul>
+      </div>
+
+    </footer>
+  </body>
 </html>

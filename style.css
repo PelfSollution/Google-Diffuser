@@ -1,70 +1,43 @@
-/* Estilos generales */
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* Estilos del header fijo */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  background-color: #333;
-  opacity: 0.9;
-  color: #fff;
-  padding: 0 20px;
-  z-index: 100;
+  flex-direction: column;
 }
 
-/* Estilos del SVG en el header */
-header svg {
-  margin-right: 20px;
+header{
+
+  height: 50px;
+
 }
 
-/* Estilos del footer fijo */
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  line-height: 60px;
-}
-
-/* Estilos del contenedor principal */
-.container {
+.menu-content{
   display: flex;
   justify-content: space-between;
-  margin: 20px;
-  margin-top: 140px; /* Para que no se solape con el header */
-}
-
-/* Estilos de las columnas */
-.column {
-  flex: 1;
+  height: 100%;
+  width: 100%;
   padding: 20px;
-  border: 1px solid #ccc;
-  margin: 0 10px;
 }
 
-/* Estilos de la primera columna */
-.column:first-child {
-  margin-left: 0;
+.left-menu{
+  display: flex;
+ 
+
 }
 
-/* Estilos de la última columna */
-.column:last-child {
-  margin-right: 0;
+.right-menu{
+  display: flex;
+ 
+
 }
+
+li {
+  list-style-type: none;
+}
+
