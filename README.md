@@ -25,6 +25,7 @@ Para hacer esta práctica tienes que:
 
 **Listas de tareas**
 
-- [ ] Clon de la página (Flexbox, Grid, diseño responsivo)
+- [x] Clon de la página (Flexbox, Grid)
+- [ ] Diseño Responsivo  
 - [ ] Doodle animación (SVG, CSS)
 - [ ] API, eventos
