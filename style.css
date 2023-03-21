@@ -351,7 +351,12 @@ svg {
 
 svg text {
   font-family: 'google-sans';
-  font-weight:bold;
+  font-weight:lighter;
+}
+
+.diffuser{
+
+  font-weight:100px;
 }
 
 .rotated-e {
@@ -390,6 +395,8 @@ svg pupil {
   animation-delay: 0.1s;
 }
 
+/*ANIMACION OJOS*/
+
 @keyframes eye-movement {
   0%, 100% {
     transform: translateX(0);
@@ -404,4 +411,30 @@ svg pupil {
     transform: translateX(-10px);
   }
 }
+
+/*ANIMACION DIFFUSER*/
+
+.animate-diffuser {
+  animation-name: fadeInOut;
+  animation-duration: 20s; /* 5s para aparecer, 5s para desaparecer */
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
 
