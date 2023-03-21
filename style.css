@@ -119,7 +119,7 @@ li {
 }
 
 .doodle {
-  width: 300px;
+
   margin-bottom: 20px;
 }
 
@@ -279,12 +279,13 @@ footer {
   }
 
   .circle-shadow {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
   }
 
   .doodle {
-    width: 200px;
+    width: 100%;
+    height: 100px;
   }
 
   .search-bar {
@@ -332,3 +333,75 @@ footer {
 
 
 }
+
+/* ANIMACIO */
+
+@font-face {
+  font-family: 'google-sans';
+  src: url('fonts/ProductSans.ttf');
+  
+}
+
+svg {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+
+}
+
+svg text {
+  font-family: 'google-sans';
+  font-weight:bold;
+}
+
+.rotated-e {
+  transform-origin: center;
+  transform: rotate(-15deg);
+}
+
+/*svg text, circle {
+  margin: 0;
+  padding: 0;
+}
+
+svg pupil {
+  transform: translate(-10px,-10px);
+}*/
+
+.letter, .pupil {
+  transition: transform 0.2s;
+}
+
+.letter {
+  animation: bounce 1.5s infinite;
+}
+
+.letter:nth-child(2) { animation-delay: 0.1s; }
+.letter:nth-child(3) { animation-delay: 0.2s; }
+.letter:nth-child(4) { animation-delay: 0.3s; }
+.letter:nth-child(5) { animation-delay: 0.4s; }
+.letter:nth-child(6) { animation-delay: 0.5s; }
+
+.pupil {
+  animation: eye-movement 3s infinite;
+}
+
+.pupil:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+@keyframes eye-movement {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+}
+
