@@ -6,17 +6,13 @@
     <title>👀 Google Diffuser</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="style.css" />
-    <script type="module" src="main.js" defer></script>
-    <script src="https://kit.fontawesome.com/d73a8f60e7.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <nav class="menu-content">
         <ul class="left-menu">
-
           <li><a class="menu-ico" href="#">Sobre Google Diffuser</a></li>
           <li><a class="menu-ico" href="#">Hugging Face</a></li>
-
         </ul>
         <ul class="right-menu">
           <li><a class="link" href="#">Gmail</a></li>
@@ -31,11 +27,10 @@
             <a class="menu-ico" href="#"><i class="fa-solid fa-user" alt="User" title="User"></i></a>
           </div>
           </li>
-      
         </ul>
       </nav>
     </header>
-
+  
     <section class="content-section">
       <div class="content-wrapper">
         <svg class="doodle" viewBox="-22 -40 800 180" xmlns="http://www.w3.org/2000/svg" alt="Doodle Google" title="Doodle Google">
@@ -49,33 +44,54 @@
           <text class="letter rotated-e" x="526" y="140" font-size="120" fill="#ea4435">e</text>
         <text class="diffuser animate-diffuser" x="504" y="130" font-size="28" fill="#4285f3">Diffuser</text>
         </svg>
-
-        <!--<img class="doodle"  src="img/doodle-fake.png" alt="Doodle Google" title="Doodle Google"/>-->
-        <div class="search-bar">
+       <div class="search-bar">
           <i class="fa-solid fa-magnifying-glass"></i>
-          <input class="search-input" type="text" placeholder="Prompt" />
+          <input class="search-input" id="myDataOrImage" type="text" placeholder="Prompt" />
           <i class="fa-solid fa-camera"></i>
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <div class="search-btns">
-          <button class="search-btn">Genera con Google Diffuser</button>
-          <button class="lucky-btn">Voy a tener suerte</button>
+          <button class="search-btn" id="load-text-btn">Genera con Google Diffuser</button>
+          <button class="lucky-btn" id="lucky-text-btn">Voy a tener suerte</button>
         </div>
         <div class="language">
-          <p>Ofrecido por Google & Hugging Face en:</p>
-          <li><a href="#">català</a></li>
-          <li><a href="#">galego</a></li>
-          <li><a href="#">euskara</a></li>
+          <p>Ofrecido por:</p>
+          <li><a href="https://images.google.com/imghp?hl=es&gl=jp&gws_rd=ssl" target="_blank" title="Google Imágenes" alt="Google Imágenes">Google Imágenes</a></li>
+          <li><a href="https://huggingface.co/" target="_blank" title="Hugging Face" alt="Hugging Face">Hugging Face</a></li>
+ 
+        </div>
+    </section>
+    <section>
+      <div id="image-section">
+        <div id="preloader" class="hidden"></div>
+        <canvas id="myCanvas"></canvas>
+    </div>
+    <div id="output-section">
+      <div id="myDiv01"></div>
+  </div>
+    </section>
+
+    <footer>
+      <div class="footer-content upper-footer0">
+        <div><form id="huggingface-form">
+          <a href="https://huggingface.co/settings/tokens" target="_blank" title="Access Tokens" alt="Access Tokens">add</a> <label for="myModel">Token:</label>
+          <input id="myEnteredToken" type="password" size="30">
+          <button type="button" id="store-token-btn">Store Token Locally</button>
+        </form>
+      </div>
+   
+        <div>
+          <form id="huggingface-form">
+            <label for="myModel">Model:</label>
+          <input id="myModel" type="text" value="stabilityai/stable-diffusion-2">
+      </form>
         </div>
       </div>
-    </section>
-    <footer>
       <div class="footer-content upper-footer">
         <p>España</p>
         <p><i class="fa-solid fa-leaf" style="color: #82cc53;"></i>Emisión neutra de carbono desde el 2007</p>
       </div>
       <div class="footer-content lower-footer">
-       
         <ul class="left-footer">
           <li><a href="#">Sobre Google</a></li>
           <li><a href="#">Publicidad</a></li>
@@ -88,7 +104,9 @@
           <li><a href="#">Configuración</a></li>
         </ul>
       </div>
-
+    
     </footer>
+    <script src="https://kit.fontawesome.com/d73a8f60e7.js" crossorigin="anonymous"></script>
+    <script type="module" src="main.js" defer></script>
   </body>
 </html>
