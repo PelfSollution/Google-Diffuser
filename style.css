@@ -236,6 +236,12 @@ canvas {
   color: darkred;
 }
 
+#estado{
+  font-size: 20px;
+  margin-bottom: 15px;
+
+}
+
 /*FOOTER*/
 
 footer {
@@ -405,6 +411,13 @@ label {
   .lower-footer ul li a {
     font-size: 12px;
   }
+
+
+#estado{
+  font-size: 16px;
+  margin-bottom: 5px;
+
+}
 
   .footer {
     height: 100px;
@@ -598,7 +611,7 @@ svg pupil {
 
 /*PRELOAD*/
 #preloader {
-  border: 6px solid #f8f9fa;
+  border: 6px solid #f2f2f2;
   border-top: 6px solid #4688f0;
   border-radius: 50%;
   width: 60px;

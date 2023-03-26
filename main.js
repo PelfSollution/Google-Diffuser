@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const loadTextBtn = document.getElementById("load-text-btn");
   const icoClick = document.getElementById("ico-click");
   const luckyTextBtn = document.getElementById("lucky-text-btn");
-  const Estado = document.getElementById("Estado");
+  const Estado = document.getElementById("estado");
   const Canvas = document.getElementById("Canvas");
   const ctx = Canvas.getContext("2d");
   const preloader = document.getElementById("preloader");
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     imagen.src = URL.createObjectURL(objectDetectionRes);
     console.log(objectDetectionRes, "imagen.src", imagen.src);
-    Estado.innerHTML ="Imagen cargada:" + '<span class="color-red">' + imagen.src + "</span>";
+    Estado.innerHTML ="🧙‍♂️🤖 <span style='font-size:12px;'>Imagen generada by <strong>Google Diffuser</strong></span>.";
   };
 
   function populateSearchHistory() {
