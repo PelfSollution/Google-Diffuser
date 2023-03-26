@@ -90,7 +90,7 @@ li {
 
 .content-wrapper {
   width: 100%;
-  min-width: 550px;
+  /*min-width: 550px;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -460,7 +460,7 @@ label {
 }
 
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 250px) {
 
   
   .menu-content ul li {
