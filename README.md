@@ -23,7 +23,10 @@ Para hacer esta práctica tienes que:
 
 - **Idea**: Crear un clon de la página inicial de Google experimentando con Flexbox, Grid y diseño responsivo. Luego, realizar una animación al estilo de los doodles de Google para experimentar con SVG y animación CSS. Finalmente, como ya hemos trabajado con JavaScript, intentar hacer una llamada a alguna API al hacer clic en el buscador y generar un evento que devuelva información e imágenes.
 
-- **UPDATE**: Al final pense en la idea de hacer un Google "Diffuser", buscador tipo Google pero que realmente no busca si no que genera una imagen mediante un modelo textToImage(Stabble Difussion). Usando la librerias de JS de hugging Face (como el github de los modelos de IA), que sirven para interactuar con la su API. 
+
+- **UPDATE**: Al final pense en la idea de hacer un Google "Diffuser", buscador tipo Google pero que realmente no busca si no que genera una imagen mediante un modelo textToImage(Stabble Difussion). Usando la librerias de JS de hugging Face (como el github de los modelos de IA), que sirven para interactuar con la su API.
+
+Prof of Concept sencillo de como podrían ser los búscadores de los proximos años, buscadores de imágenes que no se limiten a encontrar imágenes ya creadas, sino que también puedan generar imágenes a medida.
 
 @huggingface/inference: Use the Inference API to make calls to 100,000+ Machine Learning models!
 
@@ -33,8 +36,9 @@ Para hacer esta práctica tienes que:
 - [x] Diseño Responsivo  
 - [x] Doodle animación sencilla (SVG, CSS)
 - [x] API  hugging face js, eventos DOM, etc
+- [x] Preload
 - [ ] Optimizacion, mejoras
 
 EXTRAS (Si hay tiempo):
-- [] Tooltips Informativos
-- [] Capa flotante con búsquedas previas, como en "Google Imágenes"  
+- [ ] Tooltips Informativos
+- [x] Capa flotante con búsquedas previas, como en "Google Imágenes"  

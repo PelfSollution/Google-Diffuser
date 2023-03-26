@@ -11,12 +11,16 @@
     <header>
       <nav class="menu-content">
         <ul class="left-menu">
-          <li><a class="menu-ico" href="#">Sobre Google Diffuser</a></li>
-          <li><a class="menu-ico" href="#">Hugging Face</a></li>
+          <li><a class="menu-ico tooltip" href="#">Sobre Google Diffuser
+            <span class="tooltiptext">Información sobre Google Diffuser</span>
+          </a></li>
+          <li><a class="menu-ico tooltip" href="#">Hugging Face
+          <span class="tooltiptext">Hugging Face</span>
+        </a></li>
         </ul>
         <ul class="right-menu">
           <li><a class="link" href="#">Gmail</a></li>
-          <li><a class="link" href="https://www.google.es/imghp?hl=es" target="_self">Imágenes</a></li>
+          <li><a class="link" href="https://www.google.es/imghp?hl=es" target="_self">Im&aacute;genes</a></li>
           <li>
             <div class="circle-shadow">
             <a class="menu-ico" href="#"><i class="fa-solid fa-bars" alt="Menu" title="Menu"></i></a>
@@ -30,7 +34,6 @@
         </ul>
       </nav>
     </header>
-  
     <section class="content-section">
       <div class="content-wrapper">
         <svg class="doodle" viewBox="-22 -40 800 180" xmlns="http://www.w3.org/2000/svg" alt="Doodle Google" title="Doodle Google">
@@ -46,65 +49,68 @@
         </svg>
        <div class="search-bar">
           <i class="fa-solid fa-magnifying-glass"></i>
-          <input class="search-input" id="myDataOrImage" type="text" placeholder="Prompt" />
+          <input class="search-input" id="Prompt" type="text" placeholder="Prompt" autocomplete="off" />
           <i class="fa-solid fa-camera"></i>
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-magnifying-glass" style="color:#4285f3" id="ico-click"></i>
         </div>
         <div class="search-btns">
           <button class="search-btn" id="load-text-btn">Genera con Google Diffuser</button>
-          <button class="lucky-btn" id="lucky-text-btn">Voy a tener suerte</button>
+          <button class="lucky-btn tooltip" id="lucky-text-btn">Voy a tener suerte</button>
         </div>
         <div class="language">
           <p>Ofrecido por:</p>
-          <li><a href="https://images.google.com/imghp?hl=es&gl=jp&gws_rd=ssl" target="_blank" title="Google Imágenes" alt="Google Imágenes">Google Imágenes</a></li>
+          <li><a href="https://images.google.com/imghp?hl=es&gl=jp&gws_rd=ssl" target="_blank" title="Google Im&aacute;genes" alt="Google Im&aacute;genes">Google Im&aacute;genes</a></li>
           <li><a href="https://huggingface.co/" target="_blank" title="Hugging Face" alt="Hugging Face">Hugging Face</a></li>
- 
         </div>
+        <div id="search-history" class="hidden">
+          <!-- Aquí se mostrará el historial de búsquedas predefinidas -->
+      </div>
     </section>
     <section>
       <div id="image-section">
         <div id="preloader" class="hidden"></div>
-        <canvas id="myCanvas"></canvas>
+        <canvas id="Canvas"></canvas>
     </div>
     <div id="output-section">
-      <div id="myDiv01"></div>
+      <div id="Estado"></div>
   </div>
     </section>
-
     <footer>
       <div class="footer-content upper-footer0">
         <div><form id="huggingface-form">
-          <a href="https://huggingface.co/settings/tokens" target="_blank" title="Access Tokens" alt="Access Tokens">add</a> <label for="myModel">Token:</label>
+          <label for="modelo">Token:
+            <a href="https://huggingface.co/settings/tokens" class="tooltip" target="_blank"  alt="Añadir Token de Acceso"><i class="fa-solid fa-circle-plus" style="color:#777777;"></i><span class="tooltiptext">Añadir Token de Acceso</span></a>
+          </label>
           <input id="myEnteredToken" type="password" size="30">
-          <button type="button" id="store-token-btn">Store Token Locally</button>
+          <button type="button" id="store-token-btn" class="tooltip">Guardar
+            <span class="tooltiptext">Guardar Token en Local</span>
+          </button>
         </form>
       </div>
-   
         <div>
           <form id="huggingface-form">
-            <label for="myModel">Model:</label>
-          <input id="myModel" type="text" value="stabilityai/stable-diffusion-2">
+            <label for="modelo">Modelo: <a href="https://huggingface.co/stabilityai/stable-diffusion-2" class="tooltip" target="_blank" alt="Stable Diffusion v2" ><i class="fa-solid fa-circle-info" style="color:#777777;"></i><span class="tooltiptext">Stable Diffusion v2</span></a> </label>
+          <input id="modelo" type="text" value="stabilityai/stable-diffusion-2">
       </form>
         </div>
       </div>
       <div class="footer-content upper-footer">
-        <p>España</p>
-        <p><i class="fa-solid fa-leaf" style="color: #82cc53;"></i>Emisión neutra de carbono desde el 2007</p>
+        <p>Espa&ntilde;a</p>
+        <p><i class="fa-solid fa-leaf" style="color: #82cc53;"></i>Emisi&oacute;n neutra de carbono desde el 2007</p>
       </div>
       <div class="footer-content lower-footer">
         <ul class="left-footer">
           <li><a href="#">Sobre Google</a></li>
           <li><a href="#">Publicidad</a></li>
           <li><a href="#">Empresa</a></li>
-          <li><a href="#">Cómo funciona la Búsqueda</a></li>
+          <li><a href="#">C&oacute;mo funciona la B&uacute;squeda</a></li>
         </ul>
         <ul class="right-footer">
           <li><a href="#">Privacidad</a></li>
-          <li><a href="#">Términos</a></li>
-          <li><a href="#">Configuración</a></li>
+          <li><a href="#">T&eacute;rminos</a></li>
+          <li><a href="#">Configuraci&oacute;n</a></li>
         </ul>
       </div>
-    
     </footer>
     <script src="https://kit.fontawesome.com/d73a8f60e7.js" crossorigin="anonymous"></script>
     <script type="module" src="main.js" defer></script>

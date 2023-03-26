@@ -2,7 +2,6 @@
 
 html {
   box-sizing: border-box;
-
 }
 
 *,
@@ -11,8 +10,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  
-  
 }
 
 body {
@@ -33,7 +30,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 10px;
-  
 }
 
 .menu-content ul {
@@ -94,6 +90,7 @@ li {
 
 .content-wrapper {
   width: 100%;
+  min-width: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -117,7 +114,6 @@ li {
 canvas {
   margin: 0;
   padding: 20px;
-
   display: none;
   max-width: 100%;
 }
@@ -130,6 +126,7 @@ canvas {
   border: 1px solid #e6e6e6;
   width: 500px;
   height: 44px;
+
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -156,7 +153,7 @@ canvas {
   outline: none;
 }
 
-¡ .search-btns {
+.search-btns i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -203,11 +200,52 @@ canvas {
   text-decoration: underline;
 }
 
+/*CAPA BUSQUEDAS hiSTORICO*/
+
+#search-history {
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  position: absolute;
+  width: 500px;
+
+  margin-top: 280px;
+  background-color: white;
+  z-index: 10;
+}
+
+.search-history-item {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.search-history-item:hover {
+  background-color: #f1f1f1;
+}
+
+.remove-icon {
+  font-size: 14px;
+  color: red;
+  cursor: pointer;
+}
+
+.remove-icon:hover {
+  color: darkred;
+}
+
 /*FOOTER*/
 
 footer {
-
   height: 100px;
+}
+
+label {
+  color: #666666;
+  font-size: 14px;
+  margin: 10px 0;
 }
 
 .footer-content {
@@ -229,15 +267,13 @@ footer {
   border-bottom: #dddddd 1px solid;
 }
 
-.upper-footer0 a{
- 
+.upper-footer0 a {
   font-size: 14px;
-  color: #1a0dab;   
+  color: #1a0dab;
   text-decoration: none;
 }
 
-.upper-footer0 a:hover{
-
+.upper-footer0 a:hover {
   text-decoration: underline;
 }
 
@@ -278,6 +314,11 @@ footer {
   display: flex;
 }
 
+.upper-footer0 input {
+  font-size: 12px;
+  width: 160px;
+}
+
 .left-footer li {
   margin-right: 10px;
 }
@@ -292,7 +333,7 @@ footer {
 
 /*RESPONSIVE*/
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 550px) {
   .left-menu li a,
   .right-menu li a {
     font-size: 12px;
@@ -308,12 +349,24 @@ footer {
     width: 40px;
   }
 
+  #search-history {
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    position: absolute;
+    width: 90%;
+    margin-top: 260px;
+    background-color: white;
+    z-index: 10;
+  }
+
   .doodle {
     width: 100%;
     height: 100px;
   }
 
   canvas {
+    display: flex;
+    align-items: flex-start;
     padding: 10px;
   }
 
@@ -336,6 +389,7 @@ footer {
   .search-bar input {
     font-size: 12px;
   }
+
   .search-btn,
   .lucky-btn {
     height: 80px;
@@ -370,10 +424,8 @@ footer {
 
   .upper-footer0 button {
     font-size: 12px;
-    
   }
-  .upper-footer0 a{
-
+  .upper-footer0 a {
     font-size: 12px;
   }
 
@@ -381,7 +433,6 @@ footer {
     height: 33%;
     border-bottom: #dddddd 1px solid;
   }
-
 
   .lower-footer {
     height: 33%;
@@ -395,7 +446,7 @@ footer {
   }
 }
 
-/* ANIMACIO */
+/* ANIMACIO DOODLE */
 
 @font-face {
   font-family: "google-sans";
@@ -506,11 +557,43 @@ svg pupil {
   }
 }
 
-label {
-  color: #666666;
-  font-size: 14px;
+/*TOOLTIP*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
 
-  margin: 10px 0;
+.tooltip .tooltiptext {
+  visibility: hidden;
+  font-size: 12px;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border: #000000 1px solid;
+  box-shadow: rgba(64, 60, 67, 0.16) 0 2px 5px 1px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: 10px;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 /*PRELOAD*/
@@ -549,12 +632,11 @@ label {
   margin-bottom: 5px;
 }
 
-.color-blue{
-
+.color-blue {
   color: #4688f0;
   font-weight: bold;
 }
 
-.color-red{
+.color-red {
   color: #e6443b;
 }
