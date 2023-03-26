@@ -124,7 +124,7 @@ canvas {
 
 .search-bar {
   border: 1px solid #e6e6e6;
-  width: 500px;
+  width: 40%;
   height: 44px;
 
   border-radius: 20px;
@@ -460,7 +460,7 @@ label {
 }
 
 
-@media only screen and (max-width: 250px) {
+@media (min-width: 350px) and (max-width: 550px) {
 
   
   .menu-content ul li {
@@ -492,7 +492,7 @@ label {
   
 
   .search-bar {
-    width: 64%;
+    width: 80%;
     height: 44px;
   }
 
