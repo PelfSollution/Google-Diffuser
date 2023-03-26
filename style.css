@@ -459,6 +459,117 @@ label {
   }
 }
 
+
+@media only screen and (max-width: 450px) {
+
+  
+  .menu-content ul li {
+    margin-left: 10px;
+    font-size: 11px;
+}
+
+  .left-menu li a,
+  .right-menu li a {
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-ico,
+  .user-ico span {
+    font-size: 11px;
+  }
+
+  .circle-shadow {
+    height: 30px;
+    width: 30px;
+    margin:0;
+    padding: 0;
+  }
+
+
+
+  
+
+  .search-bar {
+    width: 64%;
+    height: 44px;
+  }
+
+  .search-bar i,
+  .search-btns button {
+    font-size: 12px;
+  }
+  
+  .search-bar i{
+    padding:0;
+  
+    margin-right: 10px;
+  }
+
+  .search-bar input {
+    font-size: 12px;
+  }
+
+
+
+
+
+  .language,
+  .upper-footer p,
+  .lower-footer ul li a {
+    font-size: 11px;
+  }
+
+
+
+
+
+  .upper-footer0 label {
+    font-size: 11px;
+  }
+  .upper-footer0 input {
+    font-size: 11px;
+    width: 90px;
+  }
+
+  .upper-footer0 button {
+    font-size: 11px;
+  }
+
+  .upper-footer p {
+    font-size: 11px;
+  }
+
+
+
+  .lower-footer .left-footer li a{
+    font-size: 11px;
+  }
+
+  .lower-footer .right-footer li a{
+    font-size: 11px;
+  }
+  #search-history {
+    border: 1px solid #e6e6e6;
+    font-size: 11px;
+    border-radius: 10px;
+    position: absolute;
+    width: 90%;
+    margin-top: 240px;
+    background-color: white;
+    z-index: 10;
+  }
+
+  #search-history p{
+  
+    font-size: 12px;
+    
+  }
+
+}
+
+
 /* ANIMACIO DOODLE */
 
 @font-face {

@@ -36,7 +36,7 @@ Para hacer esta práctica tienes que:
 - [x] Doodle animación sencilla (SVG, CSS)
 - [x] API  hugging face js, eventos DOM, etc
 - [x] Preload
-- [ ] Optimizacion, mejoras
+- [ ] Optimizacion, mejoras version Mobile
 
 EXTRAS (Si hay tiempo):
 - [x] Tooltips Informativos
