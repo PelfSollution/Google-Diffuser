@@ -42,3 +42,5 @@ Prof of Concept sencillo de como podrían ser los búscadores de los proximos a�
 EXTRAS (Si hay tiempo):
 - [ ] Tooltips Informativos
 - [x] Capa flotante con búsquedas previas, como en "Google Imágenes"  
+
+Demo: [Google Diffuser](https://pelfsollution.github.io/p1-html-2023/ "Google Diffuser")
