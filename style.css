@@ -124,7 +124,7 @@ canvas {
 
 .search-bar {
   border: 1px solid #e6e6e6;
-  width: 40%;
+  width: 500px;
   height: 44px;
 
   border-radius: 20px;
@@ -510,7 +510,7 @@ label {
   }
 
   .search-bar input {
-    font-size: 30px;
+    font-size: 12px;
   }
 
 
