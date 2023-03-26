@@ -26,9 +26,8 @@ Para hacer esta práctica tienes que:
 
 - **UPDATE**: Al final pense en la idea de hacer un Google "Diffuser", buscador tipo Google pero que realmente no busca si no que genera una imagen mediante un modelo textToImage(Stabble Difussion). Usando la librerias de JS de hugging Face (como el github de los modelos de IA), que sirven para interactuar con la su API.
 
-Prof of Concept sencillo de como podrían ser los búscadores de los proximos años, buscadores de imágenes que no se limiten a encontrar imágenes ya creadas, sino que también puedan generar imágenes a medida.
+- **UPDATE 2**: Prof of Concept sencillo de como podrían ser los búscadores de los proximos años, buscadores de imágenes que no se limiten a encontrar imágenes ya creadas, sino que también puedan generar imágenes a medida.
 
-@huggingface/inference: Use the Inference API to make calls to 100,000+ Machine Learning models!
 
 **Listas de tareas**
 
@@ -40,7 +39,7 @@ Prof of Concept sencillo de como podrían ser los búscadores de los proximos a�
 - [ ] Optimizacion, mejoras
 
 EXTRAS (Si hay tiempo):
-- [ ] Tooltips Informativos
+- [x] Tooltips Informativos
 - [x] Capa flotante con búsquedas previas, como en "Google Imágenes"  
 
 Demo: [Google Diffuser](https://pelfsollution.github.io/p1-html-2023/ "Google Diffuser")

@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
       itemText.textContent = search;
       const icon = document.createElement("i");
       icon.classList.add("fa-regular", "fa-clock");
-      icon.style.color = "#d1d1d1";
+      icon.style.color = "#dddddd";
       icon.style.marginRight = "6px";
       itemText.prepend(icon);
       listItem.appendChild(itemText);
