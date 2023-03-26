@@ -15,11 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchHistory = document.getElementById("search-history");
   const searchForm = document.getElementById("search-bar");
   const historicPrompts = [
-    "Introducing the new update to the Google search engine.",
-    "Cat programming",
-    "Cucomber",
-    "xxxx",
-    "xxxx",
+    "A computer from the 90s in the style of vaporwave",
+    "An abstract painting of artificial intelligence",
+    "A 3D render of an astronaut walking in a green desert",
+    "Cat on top of computer keyboard",
+    "Cucumber",
   ];
 
   if (localStorage.getItem("myStoredToken")) {
