@@ -71,13 +71,56 @@ header {
   background-color: #e6e6e6;
 }
 
-.right-menu {
-  display: flex;
+.circle-avatar {
+  display: inline-flex;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
+
+.circle-avatar .menu-ico {
+  position: absolute;
+  padding-top: 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#dddddd;
+
+}
+
+.imagen-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.circle-avatar:hover {
+  background-color: #e6e6e6;
+  
+}
+
+.circle-avatar:hover .menu-ico {
+ color:#000000;
+  
+}
+
+
+
+
 
 li {
   list-style-type: none;
 }
+
+
+
+
+
+
+
 
 /*CONTENT*/
 
@@ -353,6 +396,22 @@ label {
   .circle-shadow {
     height: 40px;
     width: 40px;
+  }
+
+  .circle-avatar {
+    display: inline-flex;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  .imagen-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
   }
 
   #search-history {
@@ -686,7 +745,6 @@ svg pupil {
 /*TOOLTIP*/
 .tooltip {
   position: relative;
-  display: inline-block;
 }
 
 .tooltip .tooltiptext {
@@ -708,6 +766,30 @@ svg pupil {
   margin-top: 10px;
 }
 
+.tooltip .tooltip2 {
+  font-family: Arial, Helvetica, sans-serif;
+  visibility: hidden;
+  font-size: 12px;
+  font-weight: lighter;
+  width: 154px;
+  background-color: #4f5356;
+  color: #fff;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: rgba(64, 60, 67, 0.16) 0 2px 5px 1px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  margin-left: -140px;
+  margin-top: 8px;
+}
+
+.tooltip2 span{
+  color:#b3b7bc;
+}
+
+
 .tooltip .tooltiptext::after {
   content: " ";
   position: absolute;
@@ -719,7 +801,13 @@ svg pupil {
   border-color: transparent transparent black transparent;
 }
 
+
+
 .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip:hover .tooltip2{
   visibility: visible;
 }
 
@@ -767,3 +855,4 @@ svg pupil {
 .color-red {
   color: #e6443b;
 }
+
