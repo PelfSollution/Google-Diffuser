@@ -1,145 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>👀 Google Diffuser</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="menu-content">
-        <ul class="left-menu">
-          <li><a class="menu-ico modalbox" href="#">Sobre Google Diffuser
-      
-          </a></li>
-          <li><a class="menu-ico" href="#">Hugging Face
-      
-        </a></li>
-        </ul>
-        <ul class="right-menu">
-          <li><a class="link" href="#">Gmail</a></li>
-          <li><a class="link" href="https://www.google.es/imghp?hl=es" target="_self">Im&aacute;genes</a></li>
-          <li>
-            <div class="circle-shadow tooltip">
-            <a class="menu-ico" href="#"><i class="fa-solid fa-bars"  title="Aplicaciones de Google"></i>
-            
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>👀 Google Diffuser</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="menu-content">
+      <ul class="left-menu">
+        <li>
+          <a class="link" href="#abrir-ventana">Sobre Google Diffuser</a>
+        </li>
+        <li>
+          <a class="link" href="https://huggingface.co/">Hugging Face</a>
+        </li>
+      </ul>
+      <ul class="right-menu">
+        <li>
+          <a class="link" href="https://www.gmail.com/">Gmail</a>
+        </li>
+        <li>
+          <a class="link" href="https://www.google.es/imghp?hl=es" target="_self">Im&aacute;genes</a>
+        </li>
+        <li>
+          <div class="circle-shadow tooltip">
+            <a class="menu-ico" href="#">
+              <i class="fa-solid fa-bars" title="Aplicaciones de Google"></i>
             </a>
             <p class="tooltip2">Aplicaciones de Google</p>
-        
           </div>
-          </li>
-
-           
-          <li>
-            <div class="circle-avatar tooltip">
-              <svg focusable="false" height="40px" version="1.1" viewBox="0 0 40 40" width="40px"
-              xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" style="opacity:1.0;z-index: 1;">
+        </li>
+        <li>
+          <div class="circle-avatar tooltip">
+            <svg focusable="false" height="40px" version="1.1" viewBox="0 0 40 40" width="40px" xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              style="opacity:1.0;z-index: 1;">
               <path
-                  d="M4.02,28.27C2.73,25.8,2,22.98,2,20c0-2.87,0.68-5.59,1.88-8l-1.72-1.04C0.78,13.67,0,16.75,0,20c0,3.31,0.8,6.43,2.23,9.18L4.02,28.27z"
-                  fill="#F6AD01"></path>
+                d="M4.02,28.27C2.73,25.8,2,22.98,2,20c0-2.87,0.68-5.59,1.88-8l-1.72-1.04C0.78,13.67,0,16.75,0,20c0,3.31,0.8,6.43,2.23,9.18L4.02,28.27z"
+                fill="#F6AD01"></path>
               <path
-                  d="M32.15,33.27C28.95,36.21,24.68,38,20,38c-6.95,0-12.98-3.95-15.99-9.73l-1.79,0.91C5.55,35.61,12.26,40,20,40c5.2,0,9.93-1.98,13.48-5.23L32.15,33.27z"
-                  fill="#249A41"></path>
+                d="M32.15,33.27C28.95,36.21,24.68,38,20,38c-6.95,0-12.98-3.95-15.99-9.73l-1.79,0.91C5.55,35.61,12.26,40,20,40c5.2,0,9.93-1.98,13.48-5.23L32.15,33.27z"
+                fill="#249A41"></path>
               <path
-                  d="M33.49,34.77C37.49,31.12,40,25.85,40,20c0-5.86-2.52-11.13-6.54-14.79l-1.37,1.46C35.72,9.97,38,14.72,38,20c0,5.25-2.26,9.98-5.85,13.27L33.49,34.77z"
-                  fill="#3174F1"></path>
+                d="M33.49,34.77C37.49,31.12,40,25.85,40,20c0-5.86-2.52-11.13-6.54-14.79l-1.37,1.46C35.72,9.97,38,14.72,38,20c0,5.25-2.26,9.98-5.85,13.27L33.49,34.77z"
+                fill="#3174F1"></path>
               <path
-                  d="M20,2c4.65,0,8.89,1.77,12.09,4.67l1.37-1.46C29.91,1.97,25.19,0,20,0l0,0C12.21,0,5.46,4.46,2.16,10.96L3.88,12C6.83,6.08,12.95,2,20,2"
-                  fill="#E92D18"></path>
-          </svg>
-           
-          <a class="menu-ico" href="#"><img src="img/avatar.jpg" class="imagen-avatar">
-            <p class="tooltip2">Cuenta de Google<br><span>Pepito de los Palotes</span><br><span>pepitopalotes@gmail.com</span></p>
-          </a>
+                d="M20,2c4.65,0,8.89,1.77,12.09,4.67l1.37-1.46C29.91,1.97,25.19,0,20,0l0,0C12.21,0,5.46,4.46,2.16,10.96L3.88,12C6.83,6.08,12.95,2,20,2"
+                fill="#E92D18"></path>
+            </svg>
+            <a class="menu-ico" href="#">
+              <img src="img/avatar.jpg" class="imagen-avatar">
+              <p class="tooltip2">Cuenta de Google <br>
+                <span>Pepito de los Palotes</span>
+                <br>
+                <span>pepitopalotes@gmail.com</span>
+              </p>
+            </a>
           </div>
-     
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <section class="content-section">
-      <div class="content-wrapper">
-        <svg class="doodle" viewBox="-22 -40 800 180" xmlns="http://www.w3.org/2000/svg" alt="Doodle Google" title="Doodle Google">
-          <text class="letter" x="140" y="100" font-size="150" fill="#4285f3">G</text>
-          <circle cx="306" cy="65" r="36" fill="#f2f2f2" />
-          <circle cx="386" cy="65" r="36" fill="#f2f2f2" />
-          <circle class="pupil" cx="306" cy="70" r="16" fill="black" />
-          <circle class="pupil" cx="386" cy="70" r="16" fill="black" />
-          <text class="letter" x="430" y="100" font-size="120" fill="#4285f3">g</text>
-          <text class="letter" x="500" y="100" font-size="120" fill="#33a852">l</text>
-          <text class="letter rotated-e" x="526" y="140" font-size="120" fill="#ea4435">e</text>
-        <text class="diffuser animate-diffuser" x="504" y="130" font-size="28" fill="#4285f3">Diffuser</text>
-        </svg>
-       <div class="search-bar">
-          <i class="fa-solid fa-magnifying-glass" style="color:#dddddd;"></i>
-          <input class="search-input" id="Prompt" type="text" placeholder="Escribe un Prompt..." autocomplete="off" />
-          <i class="fa-solid fa-camera tooltip"> <span class="tooltiptext">Búsqueda por imágenes</span></i>
-          <i class="fa-solid fa-microphone tooltip"> <span class="tooltiptext">Búsqueda por voz</span></i>
-          <i class="fa-solid fa-magnifying-glass" style="color:#4285f3" id="ico-click"></i>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="content-section">
+    <div class="content-wrapper">
+      <div id="abrir-ventana" class="ventana-modal">
+        <div>
+          <a href="#" title="Cerrar" class="cerrar-ventana">Cerrar</a>
+          <h1>👀 <span style="color:#4284f4">G</span><span style="color:#ea4335">o</span><span
+              style="color:#fbb82a">o</span><span style="color:#4284f4">g</span><span
+              style="color:#3da456">l</span><span style="color:#ea4335">e</span> Diffuser</h1>
+          <div>
+            <p><strong>Google Diffuser</strong> es un ejercicio que busca practicar habilidades con tecnolog&iacute;as web
+              modernas como <i>HTML, CSS, SVG y JavaScript</i>. A la vez, funciona como un peque&ntilde;o "<i>proof of
+                concept</i>" para explorar c&oacute;mo podr&iacute;a ser una experiencia de b&uacute;squeda en l&iacute;nea enriquecida con
+              elementos de inteligencia artificial, transformando nuestra interacci&oacute;n con los motores de b&uacute;squeda y
+              ofreciendo resultados m&aacute;s personalizados mediante la uni&oacute;n de tecnolog&iacute;as web y algoritmos de inteligencia
+              artificial avanzados, hoy en d&iacute;a en boca de todos.<br><br>
+              En el futuro, es posible que las b&uacute;squedas de im&aacute;genes no se limiten a encontrar im&aacute;genes ya creadas, sino
+              que tambi&eacute;n podr&iacute;an generar im&aacute;genes personalizadas seg&uacute;n las preferencias y necesidades del usuario. En
+              lugar de buscar una imagen que coincida aproximadamente con lo que el usuario desea, un motor de b&uacute;squeda
+              podr&iacute;a generar una imagen &uacute;nica que se ajuste perfectamente a sus requerimientos.
+              <br><br>
+              <strong>Google Diffuser</strong> utiliza tecnolog&iacute;as web modernas, como <i>HTML y CSS</i>, para
+              estructurar y dise&ntilde;ar la interfaz de usuario, <i>Flexbox</i> para un dise&ntilde;o responsivo y adaptable, y
+              <i>SVG</i> para la creaci&oacute;n y manipulaci&oacute;n de gr&aacute;ficos vectoriales. Adem&aacute;s, <i>JavaScript</i> cumple una
+              funci&oacute;n esencial al integrarse con las bibliotecas de <a href="https://huggingface.co/" target="_blank"
+                title="Hugging Face" alt="Hugging Face"><i>Hugging Face</i></a> y los modelos de generaci&oacute;n de im&aacute;genes
+              por difusi&oacute;n (<a href="https://stability.ai/blog/stable-diffusion-public-release" target="_blank"
+                title="Stable Diffusion" alt="Stable Diffusion"><i>Stable Diffusion</i></a>), permitiendo as&iacute; la
+              creaci&oacute;n de im&aacute;genes basadas en las b&uacute;squedas (denominadas "<i>prompts</i>").
+          </div>
+          <div class="linea"></div>
+          <div>
+            <p><strong>Google Diffuser</strong> is an exercise that seeks to practice skills with modern web
+              technologies such as <i>HTML, CSS, SVG, and JavaScript</i>. At the same time, it serves as a small
+              "<i>proof of
+                concept</i>" to explore what an online search experience enriched with elements of artificial
+              intelligence
+              might look like, transforming our interaction with search engines and offering more personalized results
+              through the combination of web technologies and advanced artificial intelligence algorithms, which are now
+              on everyone's lips.<br><br>
+              In the future, image searches may not be limited to finding already created images but could also generate
+              personalized images based on the preferences and needs of the user. Instead of searching for an image that
+              roughly matches what the user wants, a search engine could generate a unique image that perfectly fits
+              their requirements.
+              <br><br>
+              <strong>Google Diffuser</strong> uses modern web technologies, such as <i>HTML & CSS</i>, to structure and
+              design the user interface, <i>Flexbox</i> for responsive and adaptable design, and
+              <i>SVG</i> for the creation and manipulation of vector graphics. In addition, <i>JavaScript</i> plays an
+              essential role by integrating with the <a href="https://huggingface.co/" target="_blank"
+                title="Hugging Face" alt="Hugging Face"><i>Hugging Face</i></a> libraries and the image generation
+              models through diffusion (<a href="https://stability.ai/blog/stable-diffusion-public-release"
+                target="_blank" title="Stable Diffusion" alt="Stable Diffusion"><i>Stable Diffusion</i></a>), thus
+              allowing the creation of images based on searches (called "<i>prompts</i>").
+          </div>
         </div>
-        <div class="search-btns">
-          <button class="search-btn" id="load-text-btn">Genera con Google Diffuser</button>
-          <button class="lucky-btn" id="lucky-text-btn">Voy a tener suerte</button>
-        </div>
-        <div class="language">
-          <p>Ofrecido por:</p>
-          <li><a href="https://images.google.com/imghp?hl=es&gl=jp&gws_rd=ssl" target="_blank" title="Google Im&aacute;genes" alt="Google Im&aacute;genes">Google Im&aacute;genes</a></li>
-          <li><a href="https://huggingface.co/" target="_blank" title="Hugging Face" alt="Hugging Face">Hugging Face</a></li>
-        </div>
-        <div id="search-history" class="hidden">
-          <!-- Aquí se mostrará el historial de búsquedas predefinidas -->
       </div>
-    </section>
-    <section>
-      <div id="image-section">
-        <div id="preloader" class="hidden"></div>
-        <canvas id="Canvas"></canvas>
+      <svg class="doodle" viewBox="-22 -40 800 180" xmlns="http://www.w3.org/2000/svg" alt="Doodle Google"
+        title="Doodle Google">
+        <text class="letter" x="140" y="100" font-size="150" fill="#4285f3">G</text>
+        <circle cx="306" cy="65" r="36" fill="#f2f2f2" />
+        <circle cx="386" cy="65" r="36" fill="#f2f2f2" />
+        <circle class="pupil" cx="306" cy="70" r="16" fill="black" />
+        <circle class="pupil" cx="386" cy="70" r="16" fill="black" />
+        <text class="letter" x="430" y="100" font-size="120" fill="#4285f3">g</text>
+        <text class="letter" x="500" y="100" font-size="120" fill="#33a852">l</text>
+        <text class="letter rotated-e" x="526" y="140" font-size="120" fill="#ea4435">e</text>
+        <text class="diffuser animate-diffuser" x="504" y="130" font-size="28" fill="#4285f3">Diffuser</text>
+      </svg>
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass" style="color:#dddddd;"></i>
+        <input class="search-input" id="Prompt" type="text" placeholder="Escribe un Prompt..." autocomplete="off" />
+        <i class="fa-solid fa-camera tooltip">
+          <span class="tooltiptext">Búsqueda por imágenes</span>
+        </i>
+        <i class="fa-solid fa-microphone tooltip">
+          <span class="tooltiptext">Búsqueda por voz</span>
+        </i>
+        <i class="fa-solid fa-magnifying-glass" style="color:#4285f3" id="ico-click"></i>
+      </div>
+      <div class="search-btns">
+        <button class="search-btn" id="load-text-btn">Genera con Google Diffuser</button>
+        <button class="lucky-btn" id="lucky-text-btn">Voy a tener suerte</button>
+      </div>
+      <div class="language">
+        <p>Ofrecido por:</p>
+        <li>
+          <a href="https://images.google.com/imghp?hl=es&gl=jp&gws_rd=ssl" target="_blank"
+            title="Google Im&aacute;genes" alt="Google Im&aacute;genes">Google Im&aacute;genes</a>
+        </li>
+        <li>
+          <a href="https://huggingface.co/" target="_blank" title="Hugging Face" alt="Hugging Face">Hugging Face</a>
+        </li>
+      </div>
+      <div id="search-history" class="hidden">
+        <!-- Aquí se mostrará el historial de búsquedas predefinidas -->
+      </div>
+  </section>
+  <section>
+    <div id="image-section">
+      <div id="preloader" class="hidden"></div>
+      <canvas id="Canvas"></canvas>
     </div>
     <div id="output-section">
       <div id="estado"></div>
-  </div>
-    </section>
-    <footer>
-      <div class="footer-content upper-footer0">
-        <div><form id="huggingface-form">
-          <label for="modelo">Token:
-            <a href="https://huggingface.co/settings/tokens" class="tooltip" target="_blank"  alt="Añadir Token de Acceso"><i class="fa-solid fa-circle-plus" style="color:#777777;"></i><span class="tooltiptext">Añadir Token de Acceso</span></a>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-content upper-footer0">
+      <div>
+        <form id="huggingface-form">
+          <label for="modelo">Token: <a href="https://huggingface.co/settings/tokens" class="tooltip" target="_blank"
+              alt="Añadir Token de Acceso">
+              <i class="fa-solid fa-circle-plus" style="color:#777777;"></i>
+              <span class="tooltiptext">Añadir Token de Acceso</span>
+            </a>
           </label>
           <input id="myEnteredToken" type="password" size="30">
-          <button type="button" id="store-token-btn" class="tooltip">Guardar
-            <span class="tooltiptext">Guardar Token en Local</span>
+          <button type="button" id="store-token-btn" class="tooltip">Guardar <span class="tooltiptext">Guardar Token en
+              Local</span>
           </button>
         </form>
       </div>
-        <div>
-          <form id="huggingface-form">
-            <label for="modelo">Modelo: <a href="https://huggingface.co/stabilityai/stable-diffusion-2" class="tooltip" target="_blank" alt="Stable Diffusion v2" ><i class="fa-solid fa-circle-info" style="color:#777777;"></i><span class="tooltiptext">Stable Diffusion v2</span></a> </label>
+      <div>
+        <form id="huggingface-form">
+          <label for="modelo">Modelo: <a href="https://huggingface.co/stabilityai/stable-diffusion-2" class="tooltip"
+              target="_blank" alt="Stable Diffusion v2">
+              <i class="fa-solid fa-circle-info" style="color:#777777;"></i>
+              <span class="tooltiptext">Stable Diffusion v2</span>
+            </a>
+          </label>
           <input id="modelo" type="text" value="stabilityai/stable-diffusion-2">
-      </form>
-        </div>
+        </form>
       </div>
-      <div class="footer-content upper-footer">
-        <p>Espa&ntilde;a</p>
-        <p><i class="fa-solid fa-leaf" style="color: #82cc53;"></i>Emisi&oacute;n neutra de carbono desde el 2007</p>
-      </div>
-      <div class="footer-content lower-footer">
-        <ul class="left-footer">
-          <li><a href="#">Sobre Google</a></li>
-          <li><a href="#">Publicidad</a></li>
-          <li><a href="#">Empresa</a></li>
-          <li><a href="#">C&oacute;mo funciona la B&uacute;squeda</a></li>
-        </ul>
-        <ul class="right-footer">
-          <li><a href="#">Privacidad</a></li>
-          <li><a href="#">T&eacute;rminos</a></li>
-          <li><a href="#">Configuraci&oacute;n</a></li>
-        </ul>
-      </div>
-    </footer>
-    <script src="https://kit.fontawesome.com/d73a8f60e7.js" crossorigin="anonymous"></script>
-    <script type="module" src="main.js" defer></script>
-  </body>
+    </div>
+    <div class="footer-content upper-footer">
+      <p>Espa&ntilde;a</p>
+      <p>
+        <i class="fa-solid fa-leaf" style="color: #82cc53;"></i>Emisi&oacute;n neutra de carbono desde el 2007
+      </p>
+    </div>
+    <div class="footer-content lower-footer">
+      <ul class="left-footer">
+        <li>
+          <a href="#">Sobre Google</a>
+        </li>
+        <li>
+          <a href="#">Publicidad</a>
+        </li>
+        <li>
+          <a href="#">Empresa</a>
+        </li>
+        <li>
+          <a href="#">C&oacute;mo funciona la B&uacute;squeda</a>
+        </li>
+      </ul>
+      <ul class="right-footer">
+        <li>
+          <a href="#">Privacidad</a>
+        </li>
+        <li>
+          <a href="#">T&eacute;rminos</a>
+        </li>
+        <li>
+          <a href="#">Configuraci&oacute;n</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/d73a8f60e7.js" crossorigin="anonymous"></script>
+  <script type="module" src="main.js" defer></script>
+</body>
+
 </html>

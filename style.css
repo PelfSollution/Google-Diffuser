@@ -87,8 +87,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color:#dddddd;
-
+  color: #dddddd;
 }
 
 .imagen-avatar {
@@ -99,28 +98,15 @@ header {
 
 .circle-avatar:hover {
   background-color: #e6e6e6;
-  
 }
 
 .circle-avatar:hover .menu-ico {
- color:#000000;
-  
+  color: #000000;
 }
-
-
-
-
 
 li {
   list-style-type: none;
 }
-
-
-
-
-
-
-
 
 /*CONTENT*/
 
@@ -133,7 +119,6 @@ li {
 
 .content-wrapper {
   width: 100%;
-  /*min-width: 550px;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -269,20 +254,136 @@ canvas {
   background-color: #f1f1f1;
 }
 
-.remove-icon {
-  font-size: 14px;
-  color: red;
-  cursor: pointer;
-}
-
-.remove-icon:hover {
-  color: darkred;
-}
-
-#estado{
+#estado {
   font-size: 20px;
   margin-bottom: 15px;
+}
 
+/*TOOLTIP*/
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  font-family: Arial, Helvetica, sans-serif;
+  visibility: hidden;
+  font-size: 12px;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border: #000000 1px solid;
+  box-shadow: rgba(64, 60, 67, 0.16) 0 2px 5px 1px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: 10px;
+}
+
+.tooltip .tooltip2 {
+  font-family: Arial, Helvetica, sans-serif;
+  visibility: hidden;
+  font-size: 12px;
+  font-weight: lighter;
+  width: 154px;
+  background-color: #4f5356;
+  color: #fff;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: rgba(64, 60, 67, 0.16) 0 2px 5px 1px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  margin-left: -140px;
+  margin-top: 8px;
+}
+
+.tooltip2 span {
+  color: #b3b7bc;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip:hover .tooltip2 {
+  visibility: visible;
+}
+
+/*VENTANA MODAL*/
+.ventana-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.ventana-modal:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.ventana-modal h1 {
+  margin-bottom: 20px;
+}
+
+.ventana-modal > div {
+  width: 80%;
+  max-width: 800px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: rgba(64, 60, 67, 0.16) 0 2px 5px 1px;
+  padding: 20px;
+}
+.cerrar-ventana {
+  color: #1a0dab;
+  line-height: 70px;
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+.ventana-modal div:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.linea {
+  border-top: 1px solid #dcdcdc;
+  max-width: 100%;
+  padding: 0;
+  margin: 20px auto 0 auto;
 }
 
 /*FOOTER*/
@@ -380,6 +481,51 @@ label {
   margin-left: 10px;
 }
 
+/*PRELOAD*/
+#preloader {
+  border: 6px solid #f2f2f2;
+  border-top: 6px solid #4688f0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: -140px;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+#output-section {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.color-blue {
+  color: #4688f0;
+  font-weight: bold;
+}
+
+.color-red {
+  color: #e6443b;
+}
+
 /*RESPONSIVE*/
 
 @media only screen and (max-width: 550px) {
@@ -471,12 +617,10 @@ label {
     font-size: 12px;
   }
 
-
-#estado{
-  font-size: 16px;
-  margin-bottom: 5px;
-
-}
+  #estado {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
 
   .footer {
     height: 100px;
@@ -516,24 +660,28 @@ label {
   .right-footer {
     flex-wrap: wrap;
   }
+
+  .ventana-modal > div {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 12px;
+    padding: 10px;
+  }
 }
 
-
 @media (min-width: 350px) and (max-width: 550px) {
-
-  
   .menu-content ul li {
     margin-left: 10px;
     font-size: 11px;
-
-}
+  }
 
   .left-menu li a,
   .right-menu li a {
     font-size: 11px;
     margin: 0;
     padding: 0;
-    
   }
 
   .menu-ico,
@@ -544,13 +692,9 @@ label {
   .circle-shadow {
     height: 30px;
     width: 30px;
-    margin:0;
+    margin: 0;
     padding: 0;
   }
-
-
-
-  
 
   .search-bar {
     width: 80%;
@@ -561,10 +705,10 @@ label {
   .search-btns button {
     font-size: 12px;
   }
-  
-  .search-bar i{
-    padding:0;
-  
+
+  .search-bar i {
+    padding: 0;
+
     margin-right: 10px;
   }
 
@@ -572,19 +716,11 @@ label {
     font-size: 12px;
   }
 
-
-
-
-
   .language,
   .upper-footer p,
   .lower-footer ul li a {
     font-size: 11px;
   }
-
-
-
-
 
   .upper-footer0 label {
     font-size: 11px;
@@ -602,13 +738,11 @@ label {
     font-size: 11px;
   }
 
-
-
-  .lower-footer .left-footer li a{
+  .lower-footer .left-footer li a {
     font-size: 11px;
   }
 
-  .lower-footer .right-footer li a{
+  .lower-footer .right-footer li a {
     font-size: 11px;
   }
   #search-history {
@@ -622,14 +756,24 @@ label {
     z-index: 10;
   }
 
-  #search-history p{
-  
+  #search-history p {
     font-size: 12px;
-    
   }
 
-}
+  .ventana-modal > div {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 11px;
+    padding: 10px;
+  }
 
+  .cerrar-ventana {
+    line-height: 50px;
+    font-size: 11px;
+  }
+}
 
 /* ANIMACIO DOODLE */
 
@@ -657,15 +801,6 @@ svg text {
   transform-origin: center;
   transform: rotate(-15deg);
 }
-
-/*svg text, circle {
-  margin: 0;
-  padding: 0;
-}
-
-svg pupil {
-  transform: translate(-10px,-10px);
-}*/
 
 .letter,
 .pupil {
@@ -740,119 +875,5 @@ svg pupil {
   100% {
     opacity: 0;
   }
-}
-
-/*TOOLTIP*/
-.tooltip {
-  position: relative;
-}
-
-.tooltip .tooltiptext {
-  font-family: Arial, Helvetica, sans-serif;
-  visibility: hidden;
-  font-size: 12px;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border: #000000 1px solid;
-  box-shadow: rgba(64, 60, 67, 0.16) 0 2px 5px 1px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: 50%;
-  margin-left: -60px;
-  margin-top: 10px;
-}
-
-.tooltip .tooltip2 {
-  font-family: Arial, Helvetica, sans-serif;
-  visibility: hidden;
-  font-size: 12px;
-  font-weight: lighter;
-  width: 154px;
-  background-color: #4f5356;
-  color: #fff;
-  border-radius: 8px;
-  text-align: left;
-  box-shadow: rgba(64, 60, 67, 0.16) 0 2px 5px 1px;
-  padding: 8px;
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  margin-left: -140px;
-  margin-top: 8px;
-}
-
-.tooltip2 span{
-  color:#b3b7bc;
-}
-
-
-.tooltip .tooltiptext::after {
-  content: " ";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent black transparent;
-}
-
-
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
-.tooltip:hover .tooltip2{
-  visibility: visible;
-}
-
-/*PRELOAD*/
-#preloader {
-  border: 6px solid #f2f2f2;
-  border-top: 6px solid #4688f0;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: spin 2s linear infinite;
-  position: absolute;
-  top: -140px;
-  left: 50%;
-
-  transform: translate(-50%, -50%);
-}
-
-@keyframes spin {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-
-.hidden {
-  display: none;
-}
-
-#output-section {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  font-size: 12px;
-  margin-bottom: 5px;
-}
-
-.color-blue {
-  color: #4688f0;
-  font-weight: bold;
-}
-
-.color-red {
-  color: #e6443b;
 }
 

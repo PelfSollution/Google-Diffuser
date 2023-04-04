@@ -36,10 +36,11 @@ Para hacer esta práctica tienes que:
 - [x] Doodle animación sencilla (SVG, CSS)
 - [x] API  hugging face js, eventos DOM, etc
 - [x] Preload
-- [ ] Optimizacion, mejoras version Mobile
+- [x] Optimizacion, mejoras version Mobile
 
 EXTRAS (Si hay tiempo):
 - [x] Tooltips Informativos
 - [x] Capa flotante con búsquedas previas, como en "Google Imágenes"  
+- [x] Ventana modal con info de la práctica
 
 Demo: [Google Diffuser](https://pelfsollution.github.io/p1-html-2023/ "Google Diffuser")
