@@ -19,4 +19,4 @@ EXTRAS (Si hay tiempo):
 - [x] Capa flotante con búsquedas previas, como en "Google Imágenes"  
 - [x] Ventana modal con info de la práctica
 
-Demo: [Google Diffuser](https://pelfsollution.github.io/p1-html-2023/ "Google Diffuser")
+Demo: [Google Diffuser](https://pelfsollution.github.io/Google-Diffuser/ "Google Diffuser")
