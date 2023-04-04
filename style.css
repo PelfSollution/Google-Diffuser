@@ -773,6 +773,13 @@ label {
     line-height: 50px;
     font-size: 11px;
   }
+
+  /*PRELOAD*/
+#preloader {
+  width: 40px;
+  height: 40px;
+  top: -60px;
+}
 }
 
 /* ANIMACIO DOODLE */
